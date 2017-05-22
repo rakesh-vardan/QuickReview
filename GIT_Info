@@ -1,0 +1,50 @@
+***Brief history of version control:***
+
+1) First Generation
+	- Single-file
+	- No Networking
+	- ex: SCCS, RCS
+	
+2) Second Generation
+	- Multi-file
+	- Centralized
+	- ex: CVS, VSS, SVN, TFS, Perforce
+
+3) Third Generation
+	- Changesets
+	- Distributed
+	- ex: Git, Hg, Bazaar, BitKeeper
+	
+http://ericsink.com/vcbe/html/history_of_version_control.html
+http://ericsink.com/vcbe/html/bk01-toc.html
+
+***Advantages of DVCS***
+
+1) Different topologies
+	- Centralized
+		-> Developers push changes to one central repository
+	- Hierarchial
+		-> Developers push changes to sub-system based repositories
+		-> Sub-system repositories are periodically merged into a main repository
+	- Distributed
+		-> Developers push changes to their own repository
+		-> Project maintainers pull changes into the official repository
+
+2) Backups are easy
+	- Each clone is a full backup
+	
+3) Reliable branching/merging
+	- Feature branches
+	- Always work under version control
+	- Applying fixed to different branches
+
+4) Full local history
+	- Compute repository statistics
+	- Analyze regressions
+
+5) New Ideas
+	- Deployment
+		-> git push heroku prod_branch
+
+
+
