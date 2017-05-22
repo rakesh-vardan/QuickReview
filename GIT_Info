@@ -1,4 +1,4 @@
-***Brief history of version control:***
+***BRIEF HISTORY OF VERSION CONTROL:***
 
 1) First Generation
 	- Single-file
@@ -18,7 +18,7 @@
 http://ericsink.com/vcbe/html/history_of_version_control.html
 http://ericsink.com/vcbe/html/bk01-toc.html
 
-***Advantages of DVCS***
+***ADVANTAGES OF DVCS***
 
 1) Different topologies
 	- Centralized
@@ -47,4 +47,46 @@ http://ericsink.com/vcbe/html/bk01-toc.html
 		-> git push heroku prod_branch
 
 
+***ABOUT GIT***
+
+1) Created by Linus Torvalds, who also created Linux
+2) Prompted by Linux-BitKeeper separation
+3) Started in 2005
+4) Written in Perl and C
+5) Runs on Linux, OS X, Windows and many other OS's
+6) Design goals
+	- Speed, - Simplicity, - Strong branch/merge support, - distributed, - Scales well for large projects
+
+***CONFIGURING GIT***
+
+1) System-level configuration
+	-> git config --system
+	-> Stored in C:\Program Files(x86)\Git\etc\gitconfig
+
+2) User-level configuration
+	-> git config --global
+	-> Stored in C:\Users\<name>\.gitconfig
+
+3) Repository-level configuration
+	-> git config
+	-> Stored in .git/config in each repo
+	
+- Comomn/firsttime setup:
+	git config --global user.name "Rakesh Budugu"
+	git config --global user.email "Rakesh_Budugu@test.com"
+	git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"
+	git config --global help.autocorrect 1
+	git config --global color.ui auto
+	git config --global core.autocrlf true
+	
+	use --global for user level, --system for system level, nothing for repository level
+	
+- To see the already configured settings:
+	git config --global --list (User level)
+	git config --system --list (System level)
+	git config --list (All)
+
+- To remove the settings:
+	git config --global --unset core.autocrlf
+	git config --unset core.autocrlf
 
